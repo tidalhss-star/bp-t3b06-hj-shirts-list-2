@@ -3,393 +3,134 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>합정 셔츠룸 추천 및 정찰 가격 가이드 | 합정 셔츠룸 모음</title>
-  <meta name="description" content="합정역 주변 비즈니스 접대나 2차 모임 때 정찰 견적으로 매너 있고 유쾌하게 즐기는 최상의 주종 셔츠룸 추천 리스트.">
-  <meta name="keywords" content="합정 셔츠룸 모음, 합정 셔츠룸, 합정 셔츠룸 추천, 합정 셔츠룸 예약, 합정 셔츠룸 가격">
+  <title>합정 셔츠룸 예약센터 | 합정 셔츠룸 모음</title>
+  <meta name="description" content="합정 대표 셔츠룸 100% 정찰 요금제 가이드. 바가지 눈탱이 없는 확실한 단골 가이드북을 보장합니다.">
+  <meta name="keywords" content="합정 셔츠룸 모음, 합정 셔츠룸, 셔츠룸 가격">
+  <meta name="bpaas-design-system" content="swiss-minimal">
+  <meta name="bpaas-design-theme" content="kr-swiss-minimal">
   <link rel="canonical" href="https://t3b06-hj-shirts-list-2.pages.dev/">
-  <meta name="bpaas-design-system" content="midnight-glass">
-  <meta name="bpaas-design-theme" content="kr-t3b06-hj-shirts-list-2">
   <style>
-    
     :root {
-      --bg-dark: #1e0b36;
-      --bg-card: rgba(255, 255, 255, 0.03);
-      --border-color: rgba(255, 255, 255, 0.08);
-      --primary-neon: #581c87;
-      --accent-neon: #ec4899;
-      --text-main: #f4f4f5;
-      --text-muted: #a1a1aa;
+      --bg-swiss: #1f1d1a;
+      --card-swiss: #292622;
+      --accent-swiss: #e07a5f;
+      --border-swiss: #3c3732;
+      --text-main: #f4f1de;
+      --text-muted: #beb5a3;
     }
-    
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { background-color: var(--bg-swiss); color: var(--text-main); font-family: 'Inter', sans-serif; line-height: 1.75; padding: 0 30px; }
+    .swiss-container { max-width: 960px; margin: 0 auto; padding: 60px 0; }
+    header.swiss-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-swiss); padding-bottom: 20px; margin-bottom: 50px; }
+    .swiss-logo { font-weight: 900; font-size: 1.4rem; color: #fff; text-decoration: none; letter-spacing: 0.05em; }
+    .swiss-nav a { color: var(--text-muted); text-decoration: none; margin-left: 30px; font-weight: 700; transition: color 0.2s; }
+    .swiss-nav a:hover { color: var(--accent-swiss); }
+    .swiss-hero { padding: 40px 0 60px; border-bottom: 1px solid var(--border-swiss); margin-bottom: 50px; }
+    .swiss-hero h1 { font-size: 2.8rem; font-weight: 900; color: #fff; line-height: 1.15; letter-spacing: -0.03em; margin-bottom: 25px; }
+    .swiss-phone-banner { display: inline-flex; align-items: center; padding: 18px 35px; background-color: var(--card-swiss); border: 2px solid var(--accent-swiss); border-radius: 4px; font-weight: 800; font-size: 1.25rem; color: #fff; text-decoration: none; transition: background 0.3s; }
+    .swiss-phone-banner:hover { background-color: var(--accent-swiss); }
+    .swiss-layout { display: grid; grid-template-columns: 1fr; gap: 40px; margin-bottom: 50px; }
+    .swiss-section { background-color: var(--card-swiss); border: 1px solid var(--border-swiss); border-radius: 4px; padding: 40px; }
+    .swiss-section h2 { font-size: 1.8rem; font-weight: 800; color: #fff; margin-bottom: 25px; border-bottom: 2px solid var(--accent-swiss); padding-bottom: 10px; display: inline-block; }
+    .swiss-p { font-size: 1.05rem; color: var(--text-muted); margin-bottom: 20px; text-align: justify; }
+    .swiss-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; margin-top: 30px; }
+    .swiss-card { border: 1px solid var(--border-swiss); border-radius: 4px; padding: 25px; background: rgba(0,0,0,0.1); }
+    .swiss-card h3 { font-size: 1.2rem; font-weight: 800; color: #fff; margin-bottom: 12px; }
+    .swiss-card p { font-size: 0.95rem; color: var(--text-muted); }
+    .swiss-review { border-top: 1px solid var(--border-swiss); padding-top: 20px; margin-top: 20px; }
+    .swiss-review-author { font-size: 0.9rem; font-weight: 800; color: var(--accent-swiss); display: flex; justify-content: space-between; margin-bottom: 8px; }
+    footer.swiss-footer { border-top: 2px solid var(--border-swiss); padding-top: 40px; margin-top: 80px; text-align: center; font-size: 0.9rem; color: var(--text-muted); }
+    footer.swiss-footer a { color: var(--text-muted); text-decoration: none; margin: 0 10px; font-weight: 700; }
+    footer.swiss-footer a:hover { color: var(--accent-swiss); }
+    @media(max-width:768px) {
+      .swiss-hero h1 { font-size: 1.9rem; }
+      header.swiss-header { flex-direction: column; gap: 15px; align-items: flex-start; }
+      .swiss-nav { width: 100%; display: flex; justify-content: space-between; }
+      .swiss-nav a { margin: 0; }
     }
-    
-    body {
-      background-color: var(--bg-dark);
-      color: var(--text-main);
-      font-family: system-ui, -apple-system, sans-serif;
-      line-height: 1.7;
-      overflow-x: hidden;
-    }
-    
-    .glow-header {
-      background: rgba(0, 0, 0, 0.6);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border-color);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    
-    .nav-container {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 18px 20px;
-    }
-    
-    .logo-glow {
-      font-size: 1.5rem;
-      font-weight: 900;
-      color: #fff;
-      text-decoration: none;
-      background: linear-gradient(135deg, #fff, var(--accent-neon));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-    }
-    
-    .nav-links a {
-      color: var(--text-muted);
-      text-decoration: none;
-      margin-left: 28px;
-      font-size: 0.98rem;
-      font-weight: 700;
-      transition: color 0.3s, text-shadow 0.3s;
-    }
-    
-    .nav-links a:hover {
-      color: var(--accent-neon);
-      text-shadow: 0 0 8px var(--accent-neon);
-    }
-    
-    .hero-glow {
-      padding: 140px 20px 100px;
-      text-align: center;
-      background: radial-gradient(circle at top, var(--primary-neon) 0%, transparent 75%);
-      position: relative;
-    }
-    
-    .hero-glow h1 {
-      font-size: 3.2rem;
-      font-weight: 900;
-      margin-bottom: 24px;
-      letter-spacing: -0.06em;
-      line-height: 1.25;
-    }
-    
-    .gradient-txt {
-      background: linear-gradient(135deg, #fff, var(--accent-neon));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-    }
-    
-    .hero-glow p {
-      font-size: 1.25rem;
-      color: var(--text-muted);
-      max-width: 750px;
-      margin: 0 auto 35px;
-    }
-    
-    .phone-bar {
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.04), transparent);
-      padding: 18px;
-      border-top: 1px solid var(--border-color);
-      border-bottom: 1px solid var(--border-color);
-      border-radius: 8px;
-      margin: 25px auto;
-      max-width: 600px;
-      font-size: 1.4rem;
-      font-weight: 900;
-      letter-spacing: 0.05em;
-      text-align: center;
-    }
-    
-    .phone-bar a {
-      color: var(--accent-neon);
-      text-decoration: none;
-      transition: text-shadow 0.3s;
-    }
-    
-    .phone-bar a:hover {
-      text-shadow: 0 0 10px var(--accent-neon);
-    }
-    
-    .neon-btn {
-      display: inline-block;
-      padding: 15px 36px;
-      background: linear-gradient(135deg, var(--primary-neon), var(--accent-neon));
-      color: white;
-      text-decoration: none;
-      font-weight: 800;
-      border-radius: 9999px;
-      box-shadow: 0 4px 22px rgba(236, 72, 153, 0.35);
-      transition: all 0.3s ease;
-      letter-spacing: 0.03em;
-    }
-    
-    .neon-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 30px rgba(236, 72, 153, 0.65);
-    }
-    
-    .sec-wrap {
-      max-width: 950px;
-      margin: 0 auto;
-      padding: 60px 20px;
-    }
-    
-    .glass-box {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: 24px;
-      padding: 45px;
-      backdrop-filter: blur(10px);
-      margin-bottom: 45px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    }
-    
-    .glass-box h2 {
-      font-size: 2.2rem;
-      font-weight: 900;
-      margin-bottom: 28px;
-      color: #fff;
-      border-left: 5px solid var(--accent-neon);
-      padding-left: 20px;
-      letter-spacing: -0.04em;
-    }
-    
-    .glass-box p {
-      font-size: 1.1rem;
-      color: var(--text-muted);
-      margin-bottom: 24px;
-      text-align: justify;
-    }
-    
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 28px;
-      margin-top: 36px;
-    }
-    
-    .mini-card {
-      background: rgba(255, 255, 255, 0.015);
-      border: 1px solid var(--border-color);
-      border-radius: 16px;
-      padding: 28px;
-      transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
-    }
-    
-    .mini-card:hover {
-      border-color: var(--accent-neon);
-      transform: translateY(-3px);
-      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
-    }
-    
-    .mini-card h3 {
-      font-size: 1.3rem;
-      font-weight: 800;
-      color: #fff;
-      margin-bottom: 14px;
-      letter-spacing: -0.02em;
-    }
-    
-    .mini-card p {
-      font-size: 0.98rem;
-      color: var(--text-muted);
-      margin-bottom: 0;
-    }
-    
-    .premium-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 30px 0;
-      color: var(--text-main);
-    }
-    
-    .premium-table th {
-      background: rgba(255,255,255,0.03);
-      padding: 16px;
-      border-bottom: 2px solid var(--border-color);
-      font-weight: 800;
-      text-align: left;
-    }
-    
-    .premium-table td {
-      padding: 16px;
-      border-bottom: 1px solid var(--border-color);
-      font-size: 1.05rem;
-    }
-    
-    .premium-table tbody tr:hover {
-      background: rgba(255,255,255,0.01);
-    }
-    
-    .ugc-review {
-      border-top: 1px solid var(--border-color);
-      padding-top: 24px;
-      margin-top: 24px;
-    }
-    
-    .reviewer-meta {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.88rem;
-      color: var(--accent-neon);
-      margin-bottom: 10px;
-      font-weight: 700;
-    }
-    
-    .reviewer-text {
-      font-size: 1.02rem;
-      color: var(--text-main);
-      font-style: italic;
-    }
-    
-    footer {
-      background: rgba(0, 0, 0, 0.5);
-      border-top: 1px solid var(--border-color);
-      padding: 50px 20px;
-      text-align: center;
-      font-size: 0.95rem;
-      color: var(--text-muted);
-    }
-    
-    footer p {
-      margin-bottom: 12px;
-    }
-    
-    footer a {
-      color: var(--text-muted);
-      text-decoration: none;
-      margin: 0 12px;
-      font-weight: 700;
-      transition: color 0.3s;
-    }
-    
-    footer a:hover {
-      color: var(--accent-neon);
-    }
-    
-    @media(max-width: 768px) {
-      .hero-glow h1 {
-        font-size: 2.3rem;
-      }
-      .nav-links {
-        display: none;
-      }
-      .glass-box {
-        padding: 28px;
-      }
-      .premium-table {
-        font-size: 0.9rem;
-      }
-    }
-  
   </style>
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "합정 셔츠룸 가이드",
-      "image": "https://t3b06-hj-shirts-list-2.pages.dev/og.jpg",
-      "telephone": "010-6279-0862",
-      "url": "https://t3b06-hj-shirts-list-2.pages.dev/",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "합정",
-        "addressCountry": "KR"
-      }
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "합정 셔츠룸 안심 가이드",
+    "url": "https://t3b06-hj-shirts-list-2.pages.dev/",
+    "telephone": "010-6279-0862",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "합정",
+      "addressCountry": "KR"
     }
+  }
   </script>
 </head>
 <body>
-
-  <header class="glow-header">
-    <div class="nav-container">
-      <a href="index.html" class="logo-glow">합정 셔츠룸 포털</a>
-      <nav class="nav-links">
+  <div class="swiss-container">
+    <header class="swiss-header">
+      <a href="index.html" class="swiss-logo">SWISS 합정 CORE</a>
+      <nav class="swiss-nav">
         <a href="index.html">홈</a>
         <a href="about.html">상세정보</a>
         
       </nav>
-    </div>
-  </header>
+    </header>
+    
+    <main>
+      <section class="swiss-hero">
+        <h1>합정 셔츠룸 정찰 가이드</h1>
+        <p style="font-size:1.15rem; color:var(--text-muted); margin-bottom:30px;">복잡한 추가 요금 billing 거품 마찰 없는 극상의 릴렉싱 도파민 파티를 설계합니다 브로.</p>
+        <a href="tel:01062790862" class="swiss-phone-banner">📞 tel:010-6279-0862</a>
+      </section>
 
-  <section class="hero-glow">
-    <h1>합정 <span class="gradient-txt">셔츠룸</span> 정찰제 가이드</h1>
-    <p>합정 셔츠룸 모음로 고민하는 형들을 위한 내돈내산 진짜 로컬 후기와 안심 예약 시스템!</p>
-    <div class="phone-bar">
-      📞 실시간 예약 및 문의: <a href="tel:010-6279-0862">010-6279-0862</a>
-    </div>
-    <a href="about.html" class="neon-btn">상세정보 및 가이드 보러가기</a>
-  </section>
-
-  <main class="sec-wrap">
-    <div class="glass-box">
-      <h2>합정 셔츠룸 로컬 정직한 리포트</h2>
-      <p>요즘 친구들이나 귀한 직장 동료들이랑 소주 얼큰하게 걸치고 기분 좋게 2차 달리러 가려고 할 때, 어디 애매하고 음향 썩은 노래방이나 바가지 씌우는 올드한 유흥주점 가서 계산서 볼 때마다 뒤통수 얼얼하게 놀다 오면 돈 아깝고 밤새 잠도 안 오고 빡치지? 특히 이 합정 근처에서 진짜 프라이빗하고 가성비 빵빵한 셔츠룸 찾으려고 검색해 보면 다 광고 업자들이 장난쳐 놓은 영혼 없는 포스팅 뿐이라 한숨 푹 나왔을 거임. 그래서 이 형이 강서 마포 일대에서 가장 정직하고 투명하게 굴리는 명품 셔츠룸의 100% 리얼 정찰 가격표와 솔직 찐정보를 싹 정리해 주려고 함. 내 소중한 동생들이 술 한잔을 마셔도 유쾌하고 안전하게 대우받으면서 잊지 못할 텐션으로 놀아제낄 수 있도록 형이 완벽 케어해 줄 테니 안심하고 오길 바란다. 010-6279-0862 이 번호 하나면 예약 걱정 없이 깔끔하게 에스코트해 준다.</p>
-      <p><h3>셔츠룸 가기 전에 동생들이 반드시 명심해야 할 눈탱이 차단 법칙</h3>
-      <p>셔츠룸은 일반 어설픈 주점이나 한물간 룸이랑은 시스템 자체가 완전히 다른 화끈하고 젊은 트렌드의 프라이빗 밤문화 공간임. 눈탱이 방지를 위해 형은 애초에 빌지 장난을 원천 차단한 100% 투명 정찰가 시스템으로만 룸을 짜놓음. 주말이나 피크 타임에 와도 현장에서 빌지에 어설프게 추가 과일비나 음료 서비스비 같은 꼼수 요금 절대 못 올리게 칼같이 정리해 놨다. 술이랑 안주 퀄리티는 마포 강서 통틀어 탑클래스라고 자부하고, 파트너들의 마인드 교육도 매일 빡시게 돌리고 있어서 분위기 띄우고 텐션 올려 노는 맛 자체가 클래스가 다르다고 단언할 수 있음. 친구들 생일파티, 비즈니스 영업 접대, 혹은 스트레스 제대로 풀고 싶은 날에 만족도 진짜 500% 보장한다.</p>
-      <p>특히 우리 합정 셔츠룸은 형 직통 직속 라인이라 010-6279-0862로 예약 문자 한 줄만 편하게 남겨주면, 동생들이 원하는 스타일에 맞춰 가장 방음 빵빵하고 럭셔리한 룸으로 사전 에어컨 세팅까지 시원하게 돌려놓을 거임. 길거리 호객꾼(삐끼)들한테 낚여서 이상한 지하 퀴퀴한 골방 끌려가서 돈 오지게 뜯기고 분위기 잡치는 쓰라린 내상 겪지 말고, 공인된 형 예약 망으로 들어와서 깔끔하고 엣지 있게 놀아라. 형이 뒤에서 모든 안전장치와 퀄리티 다 세팅해 준다.</p></p>
-    </div>
-
-    <div class="glass-box">
-      <h2>단골 형들의 리얼 찐후기</h2>
+      <div class="swiss-layout">
+        <div class="swiss-section">
+          <h2>정직한 리포트 아카이브</h2>
+          <p class="swiss-p">어이 브로! 밤거리 유흥의 핫한 트렌드를 추적하며 합정이랑 공항 일대에서 진짜 바가지 가격 걱정 없이 제대로 된 셔츠룸 술자리를 즐기고 싶은데, 이 바닥 허위 정보가 하도 판쳐서 눈탱이 요금 Billing 마찰 때문에 빡돌았던 기억 많지 브로? 형이 단 1%의 바가지 거품 요금 시비 없이 최고의 만족도를 안겨주는 셔츠룸 100% 투명 정찰제 안심 예약 루트를 장전 완료했다 브로. 소중한 비즈니스 2차 접대나 오랜만에 뭉친 찐친구들과의 화끈한 친목 도파민 파티를 기획할 때, 삐끼들의 가스라이팅 가격 실랑이 마찰을 원천 차단하고 완전 안심되는 가성비 혜택을 챙기고 싶다면 형의 다이렉트 단골 번호 📞 010-6279-0862 로 다이얼을 꽂아라 브로.
       
-      <div class="ugc-review">
-        <div class="reviewer-meta">
-          <span>망원불나방 (28세, 남)</span>
-          <span>⭐⭐⭐⭐⭐</span>
-        </div>
-        <p class="reviewer-text">"망원역에서 놀다가 형님 추천 셔츠룸 예약하고 다녀왔는데 가격 진짜 딱 공시된 대로만 받네요. 에이스 마인드 개쩔고 텐션 끝판왕입니다!"</p>
-      </div>
-
-      <div class="ugc-review">
-        <div class="reviewer-meta">
-          <span>생일파티족 (31세, 남)</span>
-          <span>⭐⭐⭐⭐⭐</span>
-        </div>
-        <p class="reviewer-text">"친구들 생파로 다녀왔는데 실장님이 서비스 맥주를 끝도 없이 밀어 넣어주셔서 진짜 감동했습니다. 돈 1원도 안 아까운 2차였습니다."</p>
-      </div>
-
-      <div class="ugc-review">
-        <div class="reviewer-meta">
-          <span>비즈니스맨 (35세, 남)</span>
-          <span>⭐⭐⭐⭐⭐</span>
-        </div>
-        <p class="reviewer-text">"접대 자리가 늘 신경 쓰이는데 형님 직통 번호 010-6279-0862로 미리 예약하고 가니 입구부터 대우받는 기분 제대로 내주셔서 성공적으로 접대 마쳤네요."</p>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <p><strong>합정 셔츠룸 찐후기 가이드 포털</strong></p>
-    <p>주소: 서울특별시 합정구 일대 | 연락처: 010-6279-0862</p>
-    <p>
-      <a href="index.html">홈</a> | 
-      <a href="about.html">상세정보</a>
+      셔츠룸은 매니저 케어 텐션과 룸 인프라의 위생 살균 방역 수준이 만족도의 전부를 좌우한다 브로. 형이 제휴한 로컬 룸들은 매일 초고속 공기 순환 위생 청정기 가동과 고급 실내 인테리어 마감으로 들어오자마자 가슴이 웅장해지는 극강의 화려함을 선사한다. 가격 당연히 시간당 정찰 패키지라 안심이다.
       
-    </p>
-    <p style="margin-top: 16px; opacity: 0.5;">&copy; 2026 합정 셔츠룸 Portal. All Rights Reserved. 본 사이트는 성인 전용 정보 포털입니다.</p>
-  </footer>
+      소모임 술자리나 품격 있는 비즈니스 모임 등 귀중한 순간을 렉 걸림 대기 지연 전혀 없이 안전하고 부드럽게 성사시키고 싶다면 주저 말고 연락 때려라. 📞 010-6279-0862 이 직통 라인에 형 이름을 대고 문의를 싹 완료해 두면, 가장 수질 좋고 쾌적한 에이급 VIP 룸으로 에스코트는 물론 풍성한 과일 안주 무상 무제한 혜택까지 한 방에 세팅받을 거다 브로!</p>
+        </div>
 
+        <div class="swiss-section">
+          <h2>3대 프리미엄 가치</h2>
+          <div class="swiss-grid">
+            <div class="swiss-card">
+              <h3>1. 정찰 보장제</h3>
+              <p>어설픈 호객꾼들의 바가지 billing 마찰을 원천 차단하고 사전에 딱 약속한 요금제만 완벽하게 받습니다 브로.</p>
+            </div>
+            <div class="swiss-card">
+              <h3>2. 안심 위생 소독</h3>
+              <p>룸 내부 에어컨 안심 소독 환기 위생 등급을 매 타임 엄격 평가하여 극도로 깨끗한 시설만 제공합니다 브로.</p>
+            </div>
+            <div class="swiss-card">
+              <h3>3. 사운드 최적 튜닝</h3>
+              <p>최상급 앰프 및 하이파이 우퍼 공진 스펙을 자랑하여 노래 부를 때 1ms 지연 없는 만족을 줍니다 브로.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiss-section">
+          <h2>단골 형들의 라이브 평점</h2>
+          <div class="swiss-review">
+            <div class="swiss-review-author"><span>합정가왕 (28, 남)</span><span>⭐⭐⭐⭐⭐</span></div>
+            <p style="font-style:italic;">"전화번호 010-6279-0862 저장해 두고 매번 연락 때리고 가는데 확실히 실장님이 친절히 서비스 팍팍 넣어줘서 아주 만족합니다."</p>
+          </div>
+          <div class="swiss-review">
+            <div class="swiss-review-author"><span>가성비짱짱 (31, 남)</span><span>⭐⭐⭐⭐⭐</span></div>
+            <p style="font-style:italic;">"룸 청결 상태가 완전 A급이고 공기도 쾌적해서 여친 데려왔을 때 최고의 분위기를 만들었습니다 브로!"</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="swiss-footer">
+      <p>서울특별시 합정 일대 | 연락처: 010-6279-0862</p>
+      <p style="margin-top:15px;">
+        <a href="index.html">홈</a> | <a href="about.html">상세정보</a> 
+      </p>
+      <p style="margin-top:20px; opacity:0.4;">&copy; 2026 합정 셔츠룸 Guide. All Rights Reserved.</p>
+    </footer>
+  </div>
 </body>
 </html>
