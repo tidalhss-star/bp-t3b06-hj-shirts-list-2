@@ -1,88 +1,147 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>합정 셔츠룸 상세 정보 | 합정 셔츠룸 모음</title>
-  <meta name="description" content="합정의 명소인 합정역 8번 출구, 메세나폴리스, 홍대 카페골목 인근 가성비 셔츠룸 팩트북.">
-  <meta name="bpaas-design-system" content="swiss-minimal">
-  <meta name="bpaas-design-theme" content="kr-swiss-minimal">
-  <style>
-    :root {
-      --bg-swiss: #1f1d1a;
-      --card-swiss: #292622;
-      --accent-swiss: #e07a5f;
-      --border-swiss: #3c3732;
-      --text-main: #f4f1de;
-      --text-muted: #beb5a3;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <title>합정 셔츠룸 모음 | 정보 – 진짜 핫한 곳 다 모았다</title>
+    <meta name="description" content="합정 셔츠룸 완전 정리! 위치, 분위기, 가격대, 실제 방문 후기까지 몽땅 공개. 합정에서 셔츠룸 찾는다면 이 정보 하나면 충분하다. 형들 믿고 골라봐.">
+    <meta name="keywords" content="합정 셔츠룸, 합정 셔츠룸 모음, 합정 셔츠룸 정보, 합정 셔츠룸 추천, 합정 셔츠룸 후기, 합정 셔츠룸 가격, 합정 역 셔츠룸">
+    <link rel="canonical" href="https://t3b06-hj-shirts-list-2.vercel.app/">
+    <meta property="og:title" content="합정 셔츠룸 모음 | 합정에서 제일 핫한 곳만 골랐다">
+    <meta property="og:description" content="합정 셔츠룸 완전 정리! 위치, 분위기, 가격대, 실제 방문 후기까지 몽땅 공개. 합정에서 셔츠룸 찾는다면 이 정보 하나면 충분하다. 형들 믿고 골라봐.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b06-hj-shirts-list-2.vercel.app/">
+    <meta property="og:image" content="https://t3b06-hj-shirts-list-2.vercel.app/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="합정 셔츠룸 모음 | 합정에서 제일 핫한 곳만 골랐다">
+    <meta name="twitter:description" content="합정 셔츠룸 완전 정리! 위치, 분위기, 가격대, 실제 방문 후기까지 몽땅 공개. 합정에서 셔츠룸 찾는다면 이 정보 하나면 충분하다. 형들 믿고 골라봐.">
+    <meta name="twitter:image" content="https://t3b06-hj-shirts-list-2.vercel.app/og-image.jpg">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "합정 셔츠룸 모음",
+      "description": "합정 지역 셔츠룸 정보를 모아 놓은 페이지입니다.",
+      "url": "https://t3b06-hj-shirts-list-2.vercel.app/",
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "더블유셔츠 합정점" },
+          { "@type": "ListItem", "position": 2, "name": "에이스셔츠 합정점" },
+          { "@type": "ListItem", "position": 3, "name": "허니셔츠룸" }
+        ]
+      }
     }
-    * { margin:0; padding:0; box-sizing:border-box; }
-    body { background-color: var(--bg-swiss); color: var(--text-main); font-family: 'Inter', sans-serif; line-height: 1.75; padding: 0 30px; }
-    .swiss-container { max-width: 960px; margin: 0 auto; padding: 60px 0; }
-    header.swiss-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-swiss); padding-bottom: 20px; margin-bottom: 50px; }
-    .swiss-logo { font-weight: 900; font-size: 1.4rem; color: #fff; text-decoration: none; letter-spacing: 0.05em; }
-    .swiss-nav a { color: var(--text-muted); text-decoration: none; margin-left: 30px; font-weight: 700; transition: color 0.2s; }
-    .swiss-nav a:hover { color: var(--accent-swiss); }
-    .swiss-hero { padding: 40px 0 60px; border-bottom: 1px solid var(--border-swiss); margin-bottom: 50px; }
-    .swiss-hero h1 { font-size: 2.8rem; font-weight: 900; color: #fff; line-height: 1.15; letter-spacing: -0.03em; margin-bottom: 25px; }
-    .swiss-phone-banner { display: inline-flex; align-items: center; padding: 18px 35px; background-color: var(--card-swiss); border: 2px solid var(--accent-swiss); border-radius: 4px; font-weight: 800; font-size: 1.25rem; color: #fff; text-decoration: none; transition: background 0.3s; }
-    .swiss-phone-banner:hover { background-color: var(--accent-swiss); }
-    .swiss-layout { display: grid; grid-template-columns: 1fr; gap: 40px; margin-bottom: 50px; }
-    .swiss-section { background-color: var(--card-swiss); border: 1px solid var(--border-swiss); border-radius: 4px; padding: 40px; }
-    .swiss-section h2 { font-size: 1.8rem; font-weight: 800; color: #fff; margin-bottom: 25px; border-bottom: 2px solid var(--accent-swiss); padding-bottom: 10px; display: inline-block; }
-    .swiss-p { font-size: 1.05rem; color: var(--text-muted); margin-bottom: 20px; text-align: justify; }
-    .swiss-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; margin-top: 30px; }
-    .swiss-card { border: 1px solid var(--border-swiss); border-radius: 4px; padding: 25px; background: rgba(0,0,0,0.1); }
-    .swiss-card h3 { font-size: 1.2rem; font-weight: 800; color: #fff; margin-bottom: 12px; }
-    .swiss-card p { font-size: 0.95rem; color: var(--text-muted); }
-    .swiss-review { border-top: 1px solid var(--border-swiss); padding-top: 20px; margin-top: 20px; }
-    .swiss-review-author { font-size: 0.9rem; font-weight: 800; color: var(--accent-swiss); display: flex; justify-content: space-between; margin-bottom: 8px; }
-    footer.swiss-footer { border-top: 2px solid var(--border-swiss); padding-top: 40px; margin-top: 80px; text-align: center; font-size: 0.9rem; color: var(--text-muted); }
-    footer.swiss-footer a { color: var(--text-muted); text-decoration: none; margin: 0 10px; font-weight: 700; }
-    footer.swiss-footer a:hover { color: var(--accent-swiss); }
-    @media(max-width:768px) {
-      .swiss-hero h1 { font-size: 1.9rem; }
-      header.swiss-header { flex-direction: column; gap: 15px; align-items: flex-start; }
-      .swiss-nav { width: 100%; display: flex; justify-content: space-between; }
-      .swiss-nav a { margin: 0; }
-    }
-  </style>
+    </script>
+    <style>
+        /* ----- RESET & BASE ----- */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+        body {
+            font-family: 'Noto Sans KR', 'Helvetica Neue', Arial, sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        img, svg { max-width: 100%; display: block; }
+        a { color: #f8c630; text-decoration: none; border-bottom: 2px solid transparent; transition: border-color .2s; }
+        a:hover { border-bottom-color: #f8c630; }
+        ul { list-style: none; }
+        /* ----- TYPOGRAPHY ----- */
+        h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 900; letter-spacing: -0.02em; color: #f8c630; line-height: 1.1; text-transform: uppercase; }
+        h2 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); font-weight: 800; letter-spacing: -0.01em; color: #f0f0f0; margin-bottom: 1.2rem; }
+        h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); font-weight: 700; color: #d0d0d0; margin-bottom: 0.8rem; }
+        p, li, blockquote { font-size: clamp(1rem, 2vw, 1.15rem); color: #b0b0b0; margin-bottom: 1rem; }
+        .mono { font-family: 'JetBrains Mono', 'Courier New', monospace; font-size: 0.9em; letter-spacing: 0; }
+        /* ----- LAYOUT / SPACING ----- */
+        .site-wrap { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+        section { padding: 3rem 0; border-bottom: 1px solid #222; }
+        section:last-of-type { border-bottom: none; }
+        /* ----- NAVIGATION ----- */
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; background: rgba(10,10,10,0.95); backdrop-filter: blur(8px); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #f8c630; }
+        .nav-links { display: flex; gap: 1.5rem; }
+        .nav-links a { font-size: 0.95rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #bbb; border-bottom: none; }
+        .nav-links a:hover { color: #f8c630; }
+        .hamburger { display: none; flex-direction: column; gap: 4px; cursor: pointer; padding: 8px; background: none; border: none; }
+        .hamburger span { display: block; width: 24px; height: 2px; background: #f8c630; transition: .3s; }
+        .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+        .hamburger.active span:nth-child(2) { opacity: 0; }
+        .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+        /* ----- HERO ----- */
+        .hero { min-height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: radial-gradient(circle at 30% 40%, #1a1a2e, #0a0a0a); position: relative; overflow: hidden; padding: 4rem 1.5rem; }
+        .hero::after { content: ''; position: absolute; width: 200%; height: 2px; background: repeating-linear-gradient(90deg, #f8c630, #f8c630 10px, transparent 10px, transparent 20px); bottom: 0; left: -50%; animation: scan 12s linear infinite; }
+        @keyframes scan { 0% { transform: translateX(0); } 100% { transform: translateX(25%); } }
+        .hero h1 { margin-bottom: 1rem; text-shadow: 0 0 20px rgba(248,198,48,0.3); }
+        .hero p { max-width: 700px; font-size: clamp(1.1rem, 2.5vw, 1.3rem); }
+        .hero .badge { display: inline-block; background: #f8c630; color: #0a0a0a; padding: 0.3rem 1rem; font-weight: 700; font-size: 0.85rem; border-radius: 0; text-transform: uppercase; margin-bottom: 1.5rem; }
+        /* ----- CARDS / LISTINGS ----- */
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .card { background: #121212; border: 1px solid #222; padding: 1.5rem; transition: border-color .2s, transform .2s; }
+        .card:hover { border-color: #f8c630; transform: translateY(-4px); }
+        .card h3 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+        .card .price-tag { font-family: 'JetBrains Mono', monospace; font-size: 0.95rem; color: #f8c630; }
+        .card .meta { font-size: 0.85rem; color: #777; margin-top: 0.5rem; display: flex; gap: 1rem; flex-wrap: wrap; }
+        .card .meta span { display: flex; align-items: center; gap: 0.3rem; }
+        .card .desc { margin-top: 0.8rem; font-size: 0.95rem; color: #aaa; }
+        .card .cta { display: inline-block; margin-top: 1rem; background: #f8c630; color: #0a0a0a; padding: 0.4rem 1.2rem; font-weight: 700; font-size: 0.85rem; border: none; cursor: pointer; text-transform: uppercase; transition: background .2s; }
+        .card .cta:hover { background: #ffd95a; }
+        /* ----- FAQ ACCORDION ----- */
+        .faq-item { border-bottom: 1px solid #222; padding: 1.2rem 0; }
+        .faq-question { font-weight: 700; font-size: 1.1rem; color: #e0e0e0; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .faq-question::after { content: '+'; font-size: 1.4rem; color: #f8c630; transition: transform .3s; }
+        .faq-item.open .faq-question::after { content: '−'; transform: rotate(180deg); }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height .4s ease, padding .3s; padding: 0; color: #999; font-size: 0.95rem; }
+        .faq-item.open .faq-answer { max-height: 300px; padding-top: 1rem; }
+        /* ----- MAP / INFO BOX ----- */
+        .info-box { background: #111; border: 1px solid #333; padding: 1.5rem; margin: 1.5rem 0; }
+        .info-box h3 { color: #f8c630; }
+        .info-box ul { margin-top: 0.5rem; }
+        .info-box ul li { padding-left: 1.2rem; position: relative; margin-bottom: 0.4rem; }
+        .info-box ul li::before { content: '›'; position: absolute; left: 0; color: #f8c630; font-weight: 700; }
+        /* ----- TABLE (가격, 비교) ----- */
+        .price-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
+        .price-table th, .price-table td { border: 1px solid #333; padding: 0.75rem 1rem; text-align: left; }
+        .price-table th { background: #1a1a1a; color: #f8c630; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+        .price-table td { color: #c0c0c0; }
+        .price-table tr:hover td { background: #181818; }
+        /* ----- LOCATION SIGNAL ----- */
+        .location-signal { display: inline-flex; align-items: center; gap: 0.5rem; background: #151515; border: 1px solid #f8c630; padding: 0.5rem 1rem; font-weight: 700; text-transform: uppercase; font-size: 0.8rem; color: #f8c630; margin-bottom: 1rem; }
+        .location-signal::before { content: '📍'; }
+        /* ----- BUTTONS ----- */
+        .btn { display: inline-block; background: transparent; border: 2px solid #f8c630; color: #f8c630; padding: 0.6rem 1.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; cursor: pointer; transition: .2s; font-size: 0.9rem; }
+        .btn:hover { background: #f8c630; color: #0a0a0a; }
+        .btn-primary { background: #f8c630; color: #0a0a0a; border-color: #f8c630; }
+        .btn-primary:hover { background: #ffd95a; }
+        /* ----- RESPONSIVE 768 ----- */
+        @media (max-width: 768px) {
+            .hamburger { display: flex; }
+            .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: rgba(10,10,10,0.98); padding: 1rem 1.5rem; border-bottom: 1px solid #f8c630; }
+            .nav-links.open { display: flex; }
+            .nav-links a { padding: 0.6rem 0; }
+            .card-grid { grid-template-columns: 1fr; }
+            .price-table { font-size: 0.85rem; }
+            .hero { min-height: 50vh; padding: 3rem 1rem; }
+            section { padding: 2rem 0; }
+        }
+        /* ----- STRIPES / BRUTALIST DETAILS ----- */
+        .brutal-stripe { width: 100%; height: 6px; background: repeating-linear-gradient(90deg, #f8c630 0px, #f8c630 8px, transparent 8px, transparent 16px); margin: 2rem 0; }
+        /* ----- FOOTER ----- */
+        footer { text-align: center; padding: 2rem 1rem; font-size: 0.8rem; color: #555; border-top: 1px solid #222; margin-top: 2rem; }
+        footer a { color: #888; border-bottom: none; }
+        footer a:hover { color: #f8c630; }
+    </style>
 </head>
 <body>
-  <div class="swiss-container">
-    <header class="swiss-header">
-      <a href="index.html" class="swiss-logo">SWISS 합정 CORE</a>
-      <nav class="swiss-nav">
-        <a href="index.html">홈</a>
-        <a href="about.html">상세정보</a>
-        
-      </nav>
-    </header>
-    
-    <main>
-      <section class="swiss-hero">
-        <h1>로컬 상세 지리 및 스펙 요약</h1>
-        <p style="font-size:1.1rem; color:var(--text-muted);">형이 직접 발로 뛰어 위생 필터링을 거친 리얼 팩트북 리포트다 브로.</p>
-      </section>
 
-      <div class="swiss-layout">
-        <div class="swiss-section">
-          <h2>합정 랜드마크 기반 최적 루트</h2>
-          <p class="swiss-p">로컬 최고의 셔츠룸 트렌드와 투명한 주류 가격을 1대1 비교 분석한 오피셜 정보 아카이브 페이지다 브로. 더 이상 골목길 삐끼들의 가스라이팅 단가 장난질에 지갑 버퍼를 털리지 않도록, 안전하고 검증된 프리미엄 예약 라인만 선별했다. 출발하기 전에 형의 VIP 핫라인 📞 010-6279-0862 로 전화 한 통 날려두는 거 잊지 마라. 매니저 퀄리티도 직접 엄선했다.
-      
-      밤의 전설이 된 브로들의 리얼 이용 후기:
-      - **독점브로 (28, 크리에이터)**: '친구 생파로 셔츠룸 알아보다가 형 추천 라인으로 갔는데 정찰 요금 깔끔하게 나와서 술자리 뇌정지 없이 존잼으로 룸에서 놈.'
-      - **비즈니스맨 (32, 대기업대리)**: '해외 바이어 접대가 있어서 불안했는데 010-6279-0862 로 실장 다이얼 예약 때려두고 갔더니 최고 퀄 서비스 받음.'
-      - **합정동단골 (29, 자영업)**: '다른 데서 바가지 거하게 쓰고 룸 기피증 생겼었는데 형 가이드 보고 극복함. 과일 안주 서비스 퀄이 남다름.'</p>
-          <p class="swiss-p">주요 연계 스팟들은 합정역 8번 출구, 메세나폴리스, 홍대 카페골목와 대단히 인접해 있어 도보 5분 이내로 안전 진입이 가능하다 브로. 📞 010-6279-0862 로 미리 테이블이나 룸 예약을 걸어 마찰 없이 에스코트받아라 브로!</p>
-        </div>
-      </div>
-    </main>
-
-    <footer class="swiss-footer">
-      <p>서울특별시 합정 일대 | 연락처: 010-6279-0862</p>
-      <p style="margin-top:20px; opacity:0.4;">&copy; 2026 합정 셔츠룸 Guide. All Rights Reserved.</p>
-    </footer>
-  </div>
+<!-- Navigation -->
+<nav>
+    <div style="font-weight:900; font-size:1.2rem; color:#f
 </body>
 </html>
