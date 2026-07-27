@@ -1,148 +1,96 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <title>합정 셔츠룸 모음 | 정보 – 진짜 핫한 곳 다 모았다</title>
-    <meta name="description" content="합정 셔츠룸 완전 정리! 위치, 분위기, 가격대, 실제 방문 후기까지 몽땅 공개. 합정에서 셔츠룸 찾는다면 이 정보 하나면 충분하다. 형들 믿고 골라봐.">
-    <meta name="keywords" content="합정 셔츠룸, 합정 셔츠룸 모음, 합정 셔츠룸 정보, 합정 셔츠룸 추천, 합정 셔츠룸 후기, 합정 셔츠룸 가격, 합정 역 셔츠룸">
-    <link rel="canonical" href="https://hapjeong-shirt-info.node-link.shop/about.html">
-    <meta property="og:title" content="합정 셔츠룸 모음 | 합정에서 제일 핫한 곳만 골랐다">
-    <meta property="og:description" content="합정 셔츠룸 완전 정리! 위치, 분위기, 가격대, 실제 방문 후기까지 몽땅 공개. 합정에서 셔츠룸 찾는다면 이 정보 하나면 충분하다. 형들 믿고 골라봐.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hapjeong-shirt-info.node-link.shop/about.html">
-    <meta property="og:image" content="https://t3b06-hj-shirts-list-2.vercel.app/og-image.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:locale" content="ko_KR">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="합정 셔츠룸 모음 | 합정에서 제일 핫한 곳만 골랐다">
-    <meta name="twitter:description" content="합정 셔츠룸 완전 정리! 위치, 분위기, 가격대, 실제 방문 후기까지 몽땅 공개. 합정에서 셔츠룸 찾는다면 이 정보 하나면 충분하다. 형들 믿고 골라봐.">
-    <meta name="twitter:image" content="https://t3b06-hj-shirts-list-2.vercel.app/og-image.jpg">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "CollectionPage",
-      "name": "합정 셔츠룸 모음",
-      "description": "합정 지역 셔츠룸 정보를 모아 놓은 페이지입니다.",
-      "url": "https://t3b06-hj-shirts-list-2.vercel.app/",
-      "mainEntity": {
-        "@type": "ItemList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "더블유셔츠 합정점" },
-          { "@type": "ListItem", "position": 2, "name": "에이스셔츠 합정점" },
-          { "@type": "ListItem", "position": 3, "name": "허니셔츠룸" }
-        ]
-      }
-    }
-    </script>
-    <style>
-        /* ----- RESET & BASE ----- */
-        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-        body {
-            font-family: 'Noto Sans KR', 'Helvetica Neue', Arial, sans-serif;
-            background: #0a0a0a;
-            color: #e0e0e0;
-            line-height: 1.7;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-        img, svg { max-width: 100%; display: block; }
-        a { color: #f8c630; text-decoration: none; border-bottom: 2px solid transparent; transition: border-color .2s; }
-        a:hover { border-bottom-color: #f8c630; }
-        ul { list-style: none; }
-        /* ----- TYPOGRAPHY ----- */
-        h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 900; letter-spacing: -0.02em; color: #f8c630; line-height: 1.1; text-transform: uppercase; }
-        h2 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); font-weight: 800; letter-spacing: -0.01em; color: #f0f0f0; margin-bottom: 1.2rem; }
-        h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); font-weight: 700; color: #d0d0d0; margin-bottom: 0.8rem; }
-        p, li, blockquote { font-size: clamp(1rem, 2vw, 1.15rem); color: #b0b0b0; margin-bottom: 1rem; }
-        .mono { font-family: 'JetBrains Mono', 'Courier New', monospace; font-size: 0.9em; letter-spacing: 0; }
-        /* ----- LAYOUT / SPACING ----- */
-        .site-wrap { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
-        section { padding: 3rem 0; border-bottom: 1px solid #222; }
-        section:last-of-type { border-bottom: none; }
-        /* ----- NAVIGATION ----- */
-        nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; background: rgba(10,10,10,0.95); backdrop-filter: blur(8px); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #f8c630; }
-        .nav-links { display: flex; gap: 1.5rem; }
-        .nav-links a { font-size: 0.95rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #bbb; border-bottom: none; }
-        .nav-links a:hover { color: #f8c630; }
-        .hamburger { display: none; flex-direction: column; gap: 4px; cursor: pointer; padding: 8px; background: none; border: none; }
-        .hamburger span { display: block; width: 24px; height: 2px; background: #f8c630; transition: .3s; }
-        .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
-        .hamburger.active span:nth-child(2) { opacity: 0; }
-        .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
-        /* ----- HERO ----- */
-        .hero { min-height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: radial-gradient(circle at 30% 40%, #1a1a2e, #0a0a0a); position: relative; overflow: hidden; padding: 4rem 1.5rem; }
-        .hero::after { content: ''; position: absolute; width: 200%; height: 2px; background: repeating-linear-gradient(90deg, #f8c630, #f8c630 10px, transparent 10px, transparent 20px); bottom: 0; left: -50%; animation: scan 12s linear infinite; }
-        @keyframes scan { 0% { transform: translateX(0); } 100% { transform: translateX(25%); } }
-        .hero h1 { margin-bottom: 1rem; text-shadow: 0 0 20px rgba(248,198,48,0.3); }
-        .hero p { max-width: 700px; font-size: clamp(1.1rem, 2.5vw, 1.3rem); }
-        .hero .badge { display: inline-block; background: #f8c630; color: #0a0a0a; padding: 0.3rem 1rem; font-weight: 700; font-size: 0.85rem; border-radius: 0; text-transform: uppercase; margin-bottom: 1.5rem; }
-        /* ----- CARDS / LISTINGS ----- */
-        .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
-        .card { background: #121212; border: 1px solid #222; padding: 1.5rem; transition: border-color .2s, transform .2s; }
-        .card:hover { border-color: #f8c630; transform: translateY(-4px); }
-        .card h3 { font-size: 1.4rem; margin-bottom: 0.5rem; }
-        .card .price-tag { font-family: 'JetBrains Mono', monospace; font-size: 0.95rem; color: #f8c630; }
-        .card .meta { font-size: 0.85rem; color: #777; margin-top: 0.5rem; display: flex; gap: 1rem; flex-wrap: wrap; }
-        .card .meta span { display: flex; align-items: center; gap: 0.3rem; }
-        .card .desc { margin-top: 0.8rem; font-size: 0.95rem; color: #aaa; }
-        .card .cta { display: inline-block; margin-top: 1rem; background: #f8c630; color: #0a0a0a; padding: 0.4rem 1.2rem; font-weight: 700; font-size: 0.85rem; border: none; cursor: pointer; text-transform: uppercase; transition: background .2s; }
-        .card .cta:hover { background: #ffd95a; }
-        /* ----- FAQ ACCORDION ----- */
-        .faq-item { border-bottom: 1px solid #222; padding: 1.2rem 0; }
-        .faq-question { font-weight: 700; font-size: 1.1rem; color: #e0e0e0; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
-        .faq-question::after { content: '+'; font-size: 1.4rem; color: #f8c630; transition: transform .3s; }
-        .faq-item.open .faq-question::after { content: '−'; transform: rotate(180deg); }
-        .faq-answer { max-height: 0; overflow: hidden; transition: max-height .4s ease, padding .3s; padding: 0; color: #999; font-size: 0.95rem; }
-        .faq-item.open .faq-answer { max-height: 300px; padding-top: 1rem; }
-        /* ----- MAP / INFO BOX ----- */
-        .info-box { background: #111; border: 1px solid #333; padding: 1.5rem; margin: 1.5rem 0; }
-        .info-box h3 { color: #f8c630; }
-        .info-box ul { margin-top: 0.5rem; }
-        .info-box ul li { padding-left: 1.2rem; position: relative; margin-bottom: 0.4rem; }
-        .info-box ul li::before { content: '›'; position: absolute; left: 0; color: #f8c630; font-weight: 700; }
-        /* ----- TABLE (가격, 비교) ----- */
-        .price-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
-        .price-table th, .price-table td { border: 1px solid #333; padding: 0.75rem 1rem; text-align: left; }
-        .price-table th { background: #1a1a1a; color: #f8c630; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
-        .price-table td { color: #c0c0c0; }
-        .price-table tr:hover td { background: #181818; }
-        /* ----- LOCATION SIGNAL ----- */
-        .location-signal { display: inline-flex; align-items: center; gap: 0.5rem; background: #151515; border: 1px solid #f8c630; padding: 0.5rem 1rem; font-weight: 700; text-transform: uppercase; font-size: 0.8rem; color: #f8c630; margin-bottom: 1rem; }
-        .location-signal::before { content: '📍'; }
-        /* ----- BUTTONS ----- */
-        .btn { display: inline-block; background: transparent; border: 2px solid #f8c630; color: #f8c630; padding: 0.6rem 1.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; cursor: pointer; transition: .2s; font-size: 0.9rem; }
-        .btn:hover { background: #f8c630; color: #0a0a0a; }
-        .btn-primary { background: #f8c630; color: #0a0a0a; border-color: #f8c630; }
-        .btn-primary:hover { background: #ffd95a; }
-        /* ----- RESPONSIVE 768 ----- */
-        @media (max-width: 768px) {
-            .hamburger { display: flex; }
-            .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: rgba(10,10,10,0.98); padding: 1rem 1.5rem; border-bottom: 1px solid #f8c630; }
-            .nav-links.open { display: flex; }
-            .nav-links a { padding: 0.6rem 0; }
-            .card-grid { grid-template-columns: 1fr; }
-            .price-table { font-size: 0.85rem; }
-            .hero { min-height: 50vh; padding: 3rem 1rem; }
-            section { padding: 2rem 0; }
-        }
-        /* ----- STRIPES / BRUTALIST DETAILS ----- */
-        .brutal-stripe { width: 100%; height: 6px; background: repeating-linear-gradient(90deg, #f8c630 0px, #f8c630 8px, transparent 8px, transparent 16px); margin: 2rem 0; }
-        /* ----- FOOTER ----- */
-        footer { text-align: center; padding: 2rem 1rem; font-size: 0.8rem; color: #555; border-top: 1px solid #222; margin-top: 2rem; }
-        footer a { color: #888; border-bottom: none; }
-        footer a:hover { color: #f8c630; }
-    </style>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta charset="UTF-8">
+  <title>합정 셔츠룸 모음 — 정보</title>
+  <meta name="description" content="합정 셔츠룸을 준비하는 담당자를 위한 상세 체크리스트와 선택 기준을 제공합니다. 지역 특성, 인원 변동, 계약·정산 절차 등 900자 이상의 전문 정보를 확인하세요.">
+  <meta name="keywords" content="합정 셔츠룸, 셔츠룸 정보, 합정 회의실, 셔츠룸 조건, 지역 시그널">
+  <link rel="canonical" href="https://hapjeong-shirt-info.node-link.shop/about.html">
+  <meta property="og:title" content="합정 셔츠룸 모음 — 정보">
+  <meta property="og:description" content="합정 셔츠룸을 효율적으로 준비하는 방법을 단계별로 살펴보고, 인원 변동 대비와 마무리 정산까지 한눈에 정리했습니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hapjeong-shirt-info.node-link.shop/about.html">
+  <meta property="og:image" content="https://hapjeong-shirt-info.node-link.shop/og-image.jpg">
+  <!-- 기존 CSS 파일은 그대로 사용 -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header class="header">
+    <h1 class="m-list-gvbf">
+      <div class="inner">
+        <h1>합정 셔츠룸 상세 정보</h1>
+        <p>담당자를 위한 데이터 기반 선택 가이드</p>
+      </div>
+    </h1>
+  </header>
 
-<!-- Navigation -->
-<nav>
-    <div style="font-weight:900; font-size:1.2rem; color:#f
+  <nav class="nav-present">
+    <a href="/overview">개요</a>
+    <a href="/criteria">선정 기준</a>
+    <a href="/process">절차</a>
+    <a href="/faq">FAQ</a>
+    <a href="/contact">문의</a>
+  </nav>
+
+  <main class="t-body-8zrb">
+    <section id="region" class="t-top-ksdl">
+      <h2>1. 합정 지역 특성 및 인구 흐름</h2>
+      <p>합정은 홍대 인근의 문화·상업 복합 구역으로, 주중에는 직장인과 프리랜서, 주말에는 젊은층이 몰려드는 특성을 가집니다. 이러한 인구 구성을 고려하면, 셔츠룸 이용 시간대에 따라 예약 수요가 크게 달라지므로 사전 조사와 수요 예측이 필수적입니다.</p>
+      <p>또한 최근 몇 년간 주변에 신규 카페와 공유 오피스가 증가하면서, 회의·워크숍 외에 자체 이벤트 공간으로 활용되는 경우가 늘고 있습니다. 따라서 셔츠룸을 선택할 때는 주변 시설과의 시너지 효과를 검토하는 것이 장기적인 운영 효율성을 높이는 핵심 요소가 됩니다.</p>
+    </section>
+
+    <section id="criteria" class="t-top-ksdl">
+      <h2>2. 셔츠룸 선정 기준</h2>
+      <p>① 입지·접근성: 지하철 2호선 및 6호선 합정역과의 거리, 주요 버스 정류장 인접 여부, 도보 이동 시간을 기준으로 5분 이내를 목표로 합니다. 또한 장애인 접근성을 위한 엘리베이터와 경사로 유무를 반드시 확인합니다.</p>
+      <p>② 시설·인프라: 프로젝터, 화이트보드, 고속 Wi‑Fi, 전원 콘센트의 개수와 배치, 방음 설비 수준을 체크합니다. 특히 소음이 심한 주변 도로와의 거리, 방음 창문의 유무는 회의 품질에 직접적인 영향을 미칩니다.</p>
+      <p>③ 보안·관리: 출입 통제 시스템, CCTV 설치 현황, 비상시 대응 프로토콜을 검증합니다. 계약서에 보안 책임과 손해 배상 조항이 명시되어 있는지 반드시 확인하십시오.</p>
+      <p>④ 비용·투명성: 기본 이용료, 추가 인원·시간당 요금, 청소·정산 수수료 등 모든 항목을 사전 표기된 가격표와 비교합니다. 비용 변동이 발생할 경우 사전 통보 의무가 있는지 계약서에 명시하도록 합니다.</p>
+    </section>
+
+    <section id="process" class="t-top-ksdl">
+      <h2>3. 계약·정산 절차</h2>
+      <p>첫 단계는 현장 방문 후 체크리스트를 기반으로 제안을 마련하는 것입니다. 제안서에는 이용 목적, 예상 인원, 사용 시간, 특수 장비 요청 사항 등을 구체적으로 명시합니다.</p>
+      <p>계약서 체결 시에는 계약 기간, 위약금 조항, 사전 취소 및 연장 정책을 모두 포함시킵니다. 특히 인원 변동이 잦은 경우 ‘인원 변동 대비 추가 비용’ 항목을 별도 조항으로 두어 추후 분쟁을 예방합니다.</p>
+      <p>사용 종료 후 정산은 이용 내역서와 실제 사용 데이터를 교차 검증하는 과정을 거칩니다. 청구서에는 시간당 요금, 추가 인원·장비 사용료, 청소·정산 수수료가 명확히 구분되어야 하며, 결제는 전자세금계산서를 통해 투명하게 관리합니다.</p>
+    </section>
+
+    <section id="scenario" class="t-top-ksdl">
+      <h2>4. 상황별 체크리스트</h2>
+      <p><strong>인원 변동 상황</strong> – 1인에서 10인까지 급격히 늘어날 경우, 추가 좌석·전원 공급이 가능한지 사전에 확인하고, 추가 비용 산정 방식을 계약서에 명시합니다.</p>
+      <p><strong>시간대별 목적</strong> – 오전 업무 회의, 오후 워크숍, 저녁 네트워킹 이벤트 등 목적에 따라 조명·음향 설정이 달라지므로, 사전 시뮬레이션을 통해 최적 설정을 파악합니다.</p>
+      <p><strong>특수 장비 필요</strong> – 현장 촬영·라이브 스트리밍이 포함된 경우, 고화질 카메라 전용 전원·인터넷 대역폭을 확보하고, 별도 장비 대여 계약을 체결합니다.</p>
+      <p>위 체크리스트를 바탕으로 각 상황에 맞는 사전 준비를 완료하면, 예기치 않은 운영 리스크를 최소화하고 원활한 진행이 가능합니다.</p>
+    </section>
+
+    <section id="faq" class="t-top-ksdl">
+      <h2>5. 자주 묻는 질문(FAQ)</h2>
+      <p><strong>Q1. 예약 취소 시 환불 정책은 어떻게 되나요?</strong><br>
+      일반적으로 48시간 이전 취소는 전액 환불, 24~48시간 사이 취소는 50% 환불, 24시간 이내 취소는 환불이 불가합니다. 단, 계약서에 별도 조항이 있는 경우 해당 조항이 우선 적용됩니다.</p>
+
+      <p><strong>Q2. 추가 인원 발생 시 비용은 어떻게 산정되나요?</strong><br>
+      기본 인원 수를 초과하는 경우 1인당 추가 요금을 사전 고정해두며, 인원당 최소 10분 단위로 청구합니다. 인원 변동이 자주 발생하는 경우, ‘인원 변동 패키지’를 계약하여 비용 변동을 최소화할 수 있습니다.</p>
+
+      <p><strong>Q3. 회의가 연장될 경우 어떻게 처리하나요?</strong><br>
+      연장 시간은 사전 협의된 시간당 추가 비용을 적용합니다. 연장 여부는 사용 전 담당자와 실시간으로 확인하고, 연장 승인 여부를 문서화합니다.</p>
+
+      <p><strong>Q4. 장비 고장 시 책임은 누구에게 있나요?</strong><br>
+      기본 설비 고장은 운영 측에서 교체·수리 책임을 지며, 사용자가 직접 설치한 장비에 대한 고장은 사용자가 책임집니다. 이를 계약서에 명확히 명시하는 것이 좋습니다.</p>
+    </section>
+
+    <div class="n-btn-myqa">
+      <a href="/contact" class="button">담당자 문의하기</a>
+    </div>
+  </main>
+
+  <footer class="n-foot-e7bw">
+    <div class="k-foot-xw0w">
+      <p>&copy; 2026 합정 셔츠룸 정보 제공. 모든 권리 보유.</p>
+      <nav class="nav-present">
+        <a href="/privacy">개인정보 처리방침</a>
+        <a href="/terms">이용약관</a>
+        <a href="/contact">연락처</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
