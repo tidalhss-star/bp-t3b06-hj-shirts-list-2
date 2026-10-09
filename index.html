@@ -217,9 +217,9 @@ nav.pager a, nav.post-pager a, nav[data-site-documents="true"] a { display:inlin
 <body class="v-side-hspo"><div data-post-index-navigation="true" aria-label="글 목록 안내"><a href="posts.html">글 목록</a></div>
  <header role="region" aria-label="헤더">
  <nav role="navigation" aria-label="주 네비게이션">
- <div class="n-top-80gs" onclick="this.classList.toggle('active')">
+ <button class="n-top-80gs" type="button" aria-label="메뉴 열기" aria-expanded="false" style="border:0;background:none;padding:0" onclick="const opened=this.classList.toggle('active');this.setAttribute('aria-expanded',String(opened))">
  <span></span><span></span><span></span>
- </div>
+ </button>
  <div class="q-head-z0vz">
  <a href="#">홈</a>
  <a href="#criteria">선택 기준</a>
